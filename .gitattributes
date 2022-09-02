@@ -1,0 +1,2 @@
+components/802_15_4/secure/802_15_4_lib_keil.lib filter=lfs diff=lfs merge=lfs -text
+components/802_15_4/raw/802_15_4_lib_keil.lib filter=lfs diff=lfs merge=lfs -text
