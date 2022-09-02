@@ -1,0 +1,81 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.18a
+Copyright (C) 2016 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: mao xinxin, thu, LIC=03C6R-KVYMR-2ZPW4-FYXN0-6JJCT-BE638
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Standard  Version: 5.18a
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 1 (build 61)
+Assembler:       Armasm.exe V5.06 update 1 (build 61)
+Linker/Locator:  ArmLink.exe V5.06 update 1 (build 61)
+Library Manager: ArmAr.exe V5.06 update 1 (build 61)
+Hex Converter:   FromElf.exe V5.06 update 1 (build 61)
+CPU DLL:         
+Dialog DLL:      
+Target DLL:      Segger\JL2CM3.dll V2.99.19.0
+Dialog DLL:      TCM.DLL V1.14.8.0
+ 
+<h2>Project:</h2>
+C:\Users\maoxi\Desktop\nRF52832\BLEproject\BioCenter\examples\ble_central\EEG_1_4\pca10040\s132\arm5_no_packs\ble_app_multilink_central_pca10040_s132.uvprojx
+Project File Date:  10/03/2021
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 1 (build 61)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'nrf52832_xxaa'
+compiling boards.c...
+compiling bsp.c...
+compiling bsp_btn_ble.c...
+compiling main.c...
+..\..\..\main.c(175): warning:  #550-D: variable "ret" was set but never used
+      ret_code_t ret;
+..\..\..\main.c(489): warning:  #177-D: variable "p_adv_report" was declared but never referenced
+  						ble_gap_evt_adv_report_t const * p_adv_report=&(p_gap_evt->params.adv_report);
+..\..\..\main.c(737): warning:  #550-D: variable "err_code" was set but never used
+      ret_code_t err_code;
+..\..\..\main.c(787): warning:  #177-D: variable "ret_val" was declared but never referenced
+      uint32_t ret_val;
+..\..\..\main.c(698): warning:  #177-D: function "led_status_send_to_all" was declared but never referenced
+  static ret_code_t led_status_send_to_all(uint8_t button_action)//°´??×´Ì¬·¢??
+..\..\..\main.c: 5 warnings, 0 errors
+linking...
+Program Size: Code=25348 RO-data=3860 RW-data=3288 ZI-data=12880  
+FromELF: creating hex file...
+".\_build\nrf52832_xxaa.axf" - 0 Error(s), 5 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.5.0.pack
+                ARM::CMSIS:CORE:4.3.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 4.3.0
+
+Package Vendor: NordicSemiconductor
+                http://developer.nordicsemi.com/nRF5_SDK/pieces/nRF_DeviceFamilyPack/NordicSemiconductor.nRF_DeviceFamilyPack.8.16.0.pack
+                NordicSemiconductor::Device:Startup:8.16.0
+                Nordic Semiconductor nRF ARM devices Device Family Pack.
+   * Component: Startup Version: 8.16.0
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\maoxi\Desktop\nRF52832\BLEproject\BioCenter\examples\ble_central\EEG_1_4\pca10040\s132\arm5_no_packs\RTE
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include
+  C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.16.0\Device\Include
+  C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.42.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:4.3.0
+
+   * Component: NordicSemiconductor::Device:Startup:8.16.0
+      Source file:   Device\Source\arm\arm_startup_nrf52.s
+      Include file:  Device\Include\system_nrf52.h
+      Source file:   Device\Source\system_nrf52.c
+Build Time Elapsed:  00:00:03
+</pre>
+</body>
+</html>
